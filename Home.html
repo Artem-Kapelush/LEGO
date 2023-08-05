@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <ul class="navigation">
+                <a href="#!"><li class="navigation__item">Woman</li></a>
+                <a href="#!"><li class="navigation__item">Man</li></a>
+                <a href="all-categories.html"><li class="navigation__item">Category</li></a>
+            </ul>
+            <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
+            <div class="nav__img_box">
+                <form class="search-box">
+                    <input id="text-to-find" type="text" name="" class="search-txt" placeholder="Type to search"/>
+                    <button class="search-btn" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;"></button>
+                </form>
+                <a href="#!"><button data-count="" id="shopping-basket" class="nav__img shopping-basket"></button></a>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header__box">
+                <div class="header__title">
+                    <p class="subtitle">«Rebuild The World»</p>
+                    <p class="title">LEGO</p>
+                    <a href="#!"><button class="header__button" href="#!">Check all categories</button></a>
+                </div>
+                <div class="header__gallery">
+                    <img src="img/globe.png" alt="globe" class="gallery__image">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+           <div class="popular" id="popular">
+                <div class="popular__title_box">
+                    <p class="popular__title">Popular</p>
+                    <!-- <button class="show-more" type="button">View all</button> -->
+                    <input type="checkbox" id="burger1">
+                    <label for="burger1"></label>
+                </div>
+                <div class="popular__gallery_box">
+                    <div class="popular__gallery"><a href="daily-bugle-edition.html">
+                        <img class="gallery__img" src="img/popular/popular-img-1.png">
+                        <p class="gallery__title">Daily Bugle Edition</p>
+                        <p class="gallery__price"><strong>385$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="spinjitzu-temple.html">
+                        <img class="gallery__img" src="img/popular/popular-img-2.png">
+                        <p class="gallery__title">Spinjitzu Temple</p>
+                        <p class="gallery__price"><strong>150$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="cargo-evacuator.html">
+                        <img class="gallery__img" src="img/popular/popular-img-3.png">
+                        <p class="gallery__title">Cargo Evacuator</p>
+                        <p class="gallery__price"><strong>155$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="mos-eisley-cantina.html">
+                        <img class="gallery__img" src="img/popular/popular-img-4.png">
+                        <p class="gallery__title">Mos Eisley Cantina</p>
+                        <p class="gallery__price"><strong>375$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="london-skyline.html">
+                        <img class="gallery__img" src="img/popular/popular-img-5.png">
+                        <p class="gallery__title">London Skyline</p>
+                        <p class="gallery__price"><strong>40$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="globe.html">
+                        <img class="gallery__img" src="img/popular/popular-img-6.png">
+                        <p class="gallery__title">Globe</p>
+                        <p class="gallery__price"><strong>250$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="statue-of-liberty.html">
+                        <img class="gallery__img" src="img/popular/popular-img-7.png">
+                        <p class="gallery__title">Statue of Liberty</p>
+                        <p class="gallery__price"><strong>120$</strong></p>
+                    </a></div>
+                    <div class="popular__gallery"><a href="beacon.html">
+                        <img class="gallery__img" src="img/popular/popular-img-8.png">
+                        <p class="gallery__title">Beacon</p>
+                        <p class="gallery__price"><strong>150$</strong></p>
+                    </a></div>
+                </div>
+            </div>
+            <div class="News" id="news">
+                <div class="news__title_box">
+                    <p class="news__title">News</p>
+                    <!-- <button class="show-more" type="button">View all</button> -->
+                    <input type="checkbox" id="burger3">
+                    <label for="burger3"></label>
+                </div>
+                <div class="news__gallery_box">
+                    <img class="news__img" src="img/news-img.png">
+                    <div class="news__text_box">
+                        <h3 class="text__box_title">Lego decided to leave Russia completely</h3>
+                        <p class="text__box_date">July 12, 2020</p>
+                        <p class="text__box_text">The Danish manufacturer Lego blocks commercial activities in Russia and breaks off relations with the company that manages its Russian stores...</p>
+                        <a target="_blank" href="https://www.epravda.com.ua/rus/news/2022/07/12/689107/"><button class="text__box_button">Read more ...</button></a>
+                    </div>
+                    <img class="news__diagonal" src="img/diagonal/diagonal-news.png">
+                </div>
+            </div>
+            <div class="SBC" id="sbc">
+                <div class="sbc__title_box">
+                    <h2 class="sbc__title">Shop by category</h2>
+                    <!-- <button class="view" type="button">View all</button> -->
+                    <input type="checkbox" id="burger2">
+                    <label for="burger2"></label>
+                </div>
+                <div class="sbc__gallery-box">
+                    <div class="sbc__gallery"><a href="architecture.html">
+                        <img class="gallery__img" src="img/sbc/image-1.png">
+                        <p class="gallery__title">LEGO ARCHITECTURE</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="city.html">
+                        <img class="gallery__img" src="img/sbc/image-2.png">
+                        <p class="gallery__title">LEGO CITY</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="marvel.html">
+                        <img class="gallery__img" src="img/sbc/image-3.png">
+                        <p class="gallery__title">LEGO MARVEL</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="ninjago.html">
+                        <img class="gallery__img" src="img/sbc/image-4.png">
+                        <p class="gallery__title">LEGO NINJAGO</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="technic.html">
+                        <img class="gallery__img" src="img/sbc/image-5.png">
+                        <p class="gallery__title">LEGO TECHNIC</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="star-wars.html">
+                        <img class="gallery__img" src="img/sbc/image-6.png">
+                        <p class="gallery__title">LEGO STAR WARS</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="ideas.html">
+                        <img class="gallery__img" src="img/sbc/image-7.png">
+                        <p class="gallery__title">LEGO IDEAS</p>
+                    </a></div>
+                    <div class="sbc__gallery"><a href="creator.html">
+                        <img class="gallery__img" src="img/sbc/image-8.png">
+                        <p class="gallery__title">Lego CREATOR</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="Home.html"><img class="footer__logo" src="img/logo/Lego-footer.png"></a>
+            <ul class="footer__nav">
+                <a href="#popular"><li class="footer__nav-item">Popular</li></a>
+                <a href="#news"><li class="footer__nav-item">News</li></a>
+                <a href="#sbc"><li class="footer__nav-item">Shop by category</li></a>
+            </ul>
+            <div class="footer__contacts">
+                <a href="https://www.facebook.com/"><img class="contacts__img" src="img/contacts/facebook.svg"></a>
+                <a href="https://www.instagram.com/"><img class="contacts__img" src="img/contacts/instagram.svg"></a>
+                <a href="https://ru.pinterest.com/"><img class="contacts__img" src="img/contacts/pinterest.svg"></a>
+                <a href="https://twitter.com/"><img class="contacts__img" src="img/contacts/twitter.svg"></a>
+            </div>
+        </footer>
+        <div class="btn-up btn-up_hide"></div>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+</html>
