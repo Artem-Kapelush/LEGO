@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+	<link rel="stylesheet" href="css/style-2.css">
+    <title>TECHNIC</title>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="nav">
+            <ul class="navigation">
+                <a href="#!"><li class="navigation__item">Woman</li></a>
+                <a href="#!"><li class="navigation__item">Man</li></a>
+                <a href="all-categories.html"><li class="navigation__item">Category</li></a>
+            </ul>
+            <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
+            <div class="nav__img_box">
+                <form class="search-box">
+                    <input id="text-to-find" type="text" name="" class="search-txt" placeholder="Type to search"/>
+                    <button class="search-btn" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;"></button>
+                </form>
+                <a href="#!"><button data-count="" id="shopping-basket" class="nav__img shopping-basket"></button></a>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header__title" id="category">
+                <p class="subtitle">All categories  / <span class="subtitle_active">TECHNIC</span></p>
+                <h1 class="title">Lego Category TECHNIC</h1>
+            </div>
+            <div class="header__gallery">
+                <img class="category__img" src="img/technic/technic.png">
+            </div>
+        </header>
+        <main class="main">
+            <div class="filter__box">
+               <label for="filter">
+                    <p class="filter__text">Filter by</p>
+                    <img class="filter__arrow" src="img/filter.svg">
+                </label>
+                <select id="filter" onchange="filterProducts()">
+                    <option value="all">All Products</option>
+                    <option value="under100">Under $100</option>
+                    <option value="under200">Under $200</option>
+                    <option value="over200">Over $200</option>
+                </select>
+            </div>
+            <div class="gallery__box" id="products">
+                <div class="gallery__item" data-price="155"><a href="cargo-evacuator.html">
+                    <img class="gallery__img" src="img/technic/technic-img-1.png">
+                    <p class="gallery__title">Cargo Evacuator</p>
+                    <p class="gallery__price"><strong>155$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="130"><a href="ford-f-150-raptor.html">
+                    <img class="gallery__img" src="img/technic/technic-img-2.png">
+                    <p class="gallery__title">Ford F-150 Raptor</p>
+                    <p class="gallery__price"><strong>130$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="75"><a href="heavy-excavator.html">
+                    <img class="gallery__img" src="img/technic/technic-img-3.png">
+                    <p class="gallery__title">Heavy excavator</p>
+                    <p class="gallery__price"><strong>75$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="155"><a href="cargo-helicopter.html">
+                    <img class="gallery__img" src="img/technic/technic-img-4.png">
+                    <p class="gallery__title">Cargo helicopter</p>
+                    <p class="gallery__price"><strong>155$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="300"><a href="crawler-crane.html">
+                    <img class="gallery__img" src="img/technic/technic-img-5.png">
+                    <p class="gallery__title">Crawler Crane</p>
+                    <p class="gallery__price"><strong>300$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="700"><a href="bell-boeing-v-22-OSPREY.html">
+                    <img class="gallery__img" src="img/technic/technic-img-6.png">
+                    <p class="gallery__title">Bell-Boeing V-22 OSPREY</p>
+                    <p class="gallery__price"><strong>700$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="275"><a href="extreme-SUV-4x4.html">
+                    <img class="gallery__img" src="img/technic/technic-img-7.png">
+                    <p class="gallery__title">Extreme SUV 4x4</p>
+                    <p class="gallery__price"><strong>275$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="320"><a href="porsche-911-GT3-RS.html">
+                    <img class="gallery__img" src="img/technic/technic-img-8.png">
+                    <p class="gallery__title">Porsche 911 GT3 RS</p>
+                    <p class="gallery__price"><strong>320$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="140"><a href="racing-top-gear-car-on-management.html">
+                    <img class="gallery__img" src="img/technic/technic-img-9.png">
+                    <p class="gallery__title">Racing Top Gear Car on Management</p>
+                    <p class="gallery__price"><strong>140$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="125"><a href="concrete-mixer.html">
+                    <img class="gallery__img" src="img/technic/technic-img-10.png">
+                    <p class="gallery__title">Concrete mixer</p>
+                    <p class="gallery__price"><strong>125$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="420"><a href="bulldozer-CAT-D11T.html">
+                    <img class="gallery__img" src="img/technic/technic-img-11.png">
+                    <p class="gallery__title">Bulldozer CAT D11T</p>
+                    <p class="gallery__price"><strong>420$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="200"><a href="mobile-crane.html">
+                    <img class="gallery__img" src="img/technic/technic-img-12.png">
+                    <p class="gallery__title">Mobile crane</p>
+                    <p class="gallery__price"><strong>200$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="300"><a href="supermined-fighter.html">
+                    <img class="gallery__img" src="img/technic/technic-img-13.png">
+                    <p class="gallery__title">Supermined fighter</p>
+                    <p class="gallery__price"><strong>300$</strong></p>
+                </a></div>
+            </div>
+            <div class="load__more">
+                <button class="load__button" type="button">Load more</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="Home.html"><img class="footer__logo" src="img/logo/Lego-footer.png"></a>
+            <ul class="footer__nav">
+                <a href="#category"><li class="footer__nav-item">Category</li></a>                
+                <a href="#products"><li class="footer__nav-item">Products</li></a>
+            </ul>
+            <div class="footer__contacts" id="down">
+                <a href="https://www.facebook.com/"><img class="contacts__img" src="img/contacts/facebook.svg"></a>
+                <a href="https://www.instagram.com/"><img class="contacts__img" src="img/contacts/instagram.svg"></a>
+                <a href="https://ru.pinterest.com/"><img class="contacts__img" src="img/contacts/pinterest.svg"></a>
+                <a href="https://twitter.com/"><img class="contacts__img" src="img/contacts/twitter.svg"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+</html>
