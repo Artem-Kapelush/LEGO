@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+	<link rel="stylesheet" href="css/style-2.css">
+    <title>ARCHITECTURE</title>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="nav">
+            <ul class="navigation">
+                <a href="#!"><li class="navigation__item">Woman</li></a>
+                <a href="#!"><li class="navigation__item">Man</li></a>
+                <a href="all-categories.html"><li class="navigation__item">Category</li></a>
+            </ul>
+            <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
+            <div class="nav__img_box">
+                <form class="search-box">
+                    <input id="text-to-find" type="text" name="" class="search-txt" placeholder="Type to search"/>
+                    <button class="search-btn" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;"></button>
+                </form>
+                <a href="#!"><button data-count="" id="shopping-basket" class="nav__img shopping-basket"></button></a>
+            </div>
+        </nav>
+        <header class="header" id="category">
+            <div class="header__title">
+                <p class="subtitle">All categories  / <span class="subtitle_active">ARCHITECTURE</span></p>
+                <h1 class="title">Lego Category ARCHITECTURE</h1>
+            </div>
+            <div class="header__gallery">
+                <img class="category__img" src="img/architecture/architecture.png">
+            </div>
+        </header>
+        <main class="main">
+        	<div class="filter__box">
+               <label for="filter">
+                    <p class="filter__text">Filter by</p>
+                    <img class="filter__arrow" src="img/filter.svg">
+                </label>
+                <select id="filter" onchange="filterProducts()">
+                    <option value="all">All Products</option>
+                    <option value="under100">Under $100</option>
+                    <option value="under200">Under $200</option>
+                    <option value="over200">Over $200</option>
+                </select>
+            </div>
+            <div class="gallery__box" id="products">
+                <div class="gallery__item" data-price="65"><a href="new-york.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-1.png">
+                    <p class="gallery__title">New York</p>
+                    <p class="gallery__price"><strong>65$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="110"><a href="statue-of-liberty.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-2.png">
+                    <p class="gallery__title">Statue of Liberty</p>
+                    <p class="gallery__price"><strong>110$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="60"><a href="dubai.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-3.png">
+                    <p class="gallery__title">Dubai</p>
+                    <p class="gallery__price"><strong>60$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="150"><a href="empire-state-bilding.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-4.png">
+                    <p class="gallery__title">Empire State Building</p>
+                    <p class="gallery__price"><strong>150$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="110"><a href="small-white-house.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-5.png">
+                    <p class="gallery__title">Small White House</p>
+                    <p class="gallery__price"><strong>110$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="130"><a href="great-white-house.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-6.png">
+                    <p class="gallery__title">Great White House</p>
+                    <p class="gallery__price"><strong>130$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="130"><a href="great-pyramid-of-giza.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-7.png">
+                    <p class="gallery__title">Great Pyramid of Giza</p>
+                    <p class="gallery__price"><strong>130$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="60"><a href="singapore.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-8.png">
+                    <p class="gallery__title">Singapore</p>
+                    <p class="gallery__price"><strong>60$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="50"><a href="paris.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-9.png">
+                    <p class="gallery__title">Paris</p>
+                    <p class="gallery__price"><strong>50$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="70"><a href="tokyo.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-10.png">
+                    <p class="gallery__title">Tokyo</p>
+                    <p class="gallery__price"><strong>70$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="130"><a href="shanghai.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-11.png">
+                    <p class="gallery__title">Shanghai</p>
+                    <p class="gallery__price"><strong>130$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="40"><a href="london-skyline.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-12.png">
+                    <p class="gallery__title">London Skyline</p>
+                    <p class="gallery__price"><strong>40$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="120"><a href="taj-mahal.html">
+                    <img class="gallery__img" src="img/architecture/architecture-img-13.png">
+                    <p class="gallery__title">Taj Mahal</p>
+                    <p class="gallery__price"><strong>120$</strong></p>
+                </a></div>
+            </div>
+            <div class="load__more">
+                <button class="load__button" type="button">Load more</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="Home.html"><img class="footer__logo" src="img/logo/Lego-footer.png"></a>
+            <ul class="footer__nav">
+                <a href="#category"><li class="footer__nav-item">Category</li></a>                
+                <a href="#products"><li class="footer__nav-item">Products</li></a>
+            </ul>
+            <div class="footer__contacts">
+                <a href="#!"><img class="contacts__img" src="img/contacts/facebook.svg"></a>
+                <a href="#!"><img class="contacts__img" src="img/contacts/instagram.svg"></a>
+                <a href="#!"><img class="contacts__img" src="img/contacts/pinterest.svg"></a>
+                <a href="#!"><img class="contacts__img" src="img/contacts/twitter.svg"></a>
+            </div>
+        </footer>
+	</div>
+    <script src="js/style.js"></script>
+</body>
+</html>
