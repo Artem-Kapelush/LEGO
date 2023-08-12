@@ -7,28 +7,43 @@
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/logo.svg">
 	<link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="css/media-2.css">
     <title>All categories lego</title>
 </head>
 <body>
 	<div class="wrapper">
-		<nav class="nav">
+        <nav class="nav">
             <ul class="navigation">
-                <a href="#!"><li class="navigation__item">Woman</li></a>
-                <a href="#!"><li class="navigation__item">Man</li></a>
+                <a href="#!"><li class="navigation__item">Girl</li></a>
+                <a href="#!"><li class="navigation__item">Boy</li></a>
                 <a href="all-categories.html"><li class="navigation__item">Category</li></a>
             </ul>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Girl</a></li>
+                    <li><a class="menu__item" href="#">Boy</a></li>
+                    <li><a class="menu__item" href="#">Category</a></li>
+                </ul>
+            </div>
             <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
             <div class="nav__img_box">
-                <a href="#!"><img class="nav__img" src="img/search.svg"></a>
+                <form class="search-box">
+                    <input id="text-to-find" type="text" name="" class="search-txt" placeholder="Type to search"/>
+                    <button class="search-btn" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;"></button>
+                </form>
                 <a href="#!"><button data-count="" id="shopping-basket" class="nav__img shopping-basket"></button></a>
             </div>
         </nav>
-        <header class="header">
+        <header class="header" id="category">
             <div class="header__title">
                 <h1 class="titIe">All categories</h1>
             </div>
         </header>
-        <main class="main">
+        <main class="main" id="products">
             <div class="gallery__box">
                 <div class="gallery__item"><a href="architecture.html">
                     <img class="gallery__img" src="img/sbc/image-1.png">
@@ -70,11 +85,8 @@
         <footer class="footer">
             <a href="Home.html"><img class="footer__logo" src="img/logo/Lego-footer.png"></a>
             <ul class="footer__nav">
-                <a href="#!"><li class="footer__nav-item">Shop</li></a>
-                <a href="#!"><li class="footer__nav-item">Delivery</li></a>
-                <a href="#!"><li class="footer__nav-item">Service</li></a>
-                <a href="#!"><li class="footer__nav-item">Sitemap</li></a>
-                <a href="#!"><li class="footer__nav-item">Contacts</li></a>
+                <a href="#category"><li class="footer__nav-item">Category</li></a>                
+                <a href="#products"><li class="footer__nav-item">Products</li></a>
             </ul>
             <div class="footer__contacts" id="down">
                 <a href="#!"><img class="contacts__img" src="img/contacts/facebook.svg"></a>
