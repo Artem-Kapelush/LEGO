@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="css/media-2.css">
+    <title>IDEAS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <ul class="navigation">
+                <a href="#!"><li class="navigation__item">Girl</li></a>
+                <a href="#!"><li class="navigation__item">Boy</li></a>
+                <a href="all-categories.html"><li class="navigation__item">Category</li></a>
+            </ul>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Girl</a></li>
+                    <li><a class="menu__item" href="#">Boy</a></li>
+                    <li><a class="menu__item" href="#">Category</a></li>
+                </ul>
+            </div>
+            <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
+            <div class="nav__img_box">
+                <form class="search-box">
+                    <input id="text-to-find" type="text" name="" class="search-txt" placeholder="Type to search"/>
+                    <button class="search-btn" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;"></button>
+                </form>
+                <a href="#!"><button data-count="" id="shopping-basket" class="nav__img shopping-basket"></button></a>
+            </div>
+        </nav>
+        <header class="header" id="category">
+            <div class="header__title">
+                <p class="subtitle">All categories  / <span class="subtitle_active">IDEAS</span></p>
+                <h1 class="title">Lego Category IDEAS</h1>
+            </div>
+            <div class="header__gallery">
+                <img class="category__img" src="img/ideas/ideas.png">
+            </div>
+        </header>
+        <main class="main">
+            <div class="filter__box">
+               <label for="filter">
+                    <p class="filter__text">Filter by</p>
+                    <img class="filter__arrow" src="img/filter.svg">
+                </label>
+                <select id="filter" onchange="filterProducts()">
+                    <option value="all">All Products</option>
+                    <option value="under100">Under $100</option>
+                    <option value="under200">Under $200</option>
+                    <option value="over200">Over $200</option>
+                </select>
+            </div>
+            <div class="gallery__box" id="products">
+                <div class="gallery__item" data-price="265"><a href="house-in-the-tree.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-1.png">
+                    <p class="gallery__title">House in the tree</p>
+                    <p class="gallery__price"><strong>265$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="155"><a href="ship-in-a-bottle.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-2.png">
+                    <p class="gallery__title">Ship in a bottle</p>
+                    <p class="gallery__price"><strong>155$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="185"><a href="steamboat-willy.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-3.png">
+                    <p class="gallery__title">Steamboat Willy</p>
+                    <p class="gallery__price"><strong>185$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="130"><a href="dinosaur-bones.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-4.png">
+                    <p class="gallery__title">Dinosaur bones</p>
+                    <p class="gallery__price"><strong>130$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="165"><a href="ghost-hunters.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-5.png">
+                    <p class="gallery__title">Ghost Hunters</p>
+                    <p class="gallery__price"><strong>165$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="225"><a href="the-beatles-yellow-submarine.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-6.png">
+                    <p class="gallery__title">The beatles: Yellow submarine</p>
+                    <p class="gallery__price"><strong>225$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="500"><a href="pirates-of-barrakuda-bay.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-7.png">
+                    <p class="gallery__title">Pirates of Barrakuda Bay</p>
+                    <p class="gallery__price"><strong>500$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="325"><a href="home-alone.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-8.png">
+                    <p class="gallery__title">Home Alone - One at home</p>
+                    <p class="gallery__price"><strong>325$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="420"><a href="old-fishing-stor.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-9.png">
+                    <p class="gallery__title">Old fishing store</p>
+                    <p class="gallery__price"><strong>420$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="250"><a href="globe.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-10.png">
+                    <p class="gallery__title">Globe</p>
+                    <p class="gallery__price"><strong>250$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="280"><a href="typewriter.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-11.png">
+                    <p class="gallery__title">Typewriter</p>
+                    <p class="gallery__price"><strong>280$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="460"><a href="lion-knights'-castle.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-12.png">
+                    <p class="gallery__title">Lion Knights' Castle</p>
+                    <p class="gallery__price"><strong>460$</strong></p>
+                </a></div>
+                <div class="gallery__item" data-price="185"><a href="star-night.html">
+                    <img class="gallery__img" src="img/ideas/ideas-img-13.png">
+                    <p class="gallery__title">Vincent Van Gogh: Star night</p>
+                    <p class="gallery__price"><strong>185$</strong></p>
+                </a></div>
+            </div>
+            <div class="load__more">
+                <button class="load__button" type="button">Load more</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="Home.html"><img class="footer__logo" src="img/logo/Lego-footer.png"></a>
+            <ul class="footer__nav">
+                <a href="#category"><li class="footer__nav-item">Category</li></a>                
+                <a href="#products"><li class="footer__nav-item">Products</li></a>
+            </ul>
+            <div class="footer__contacts" id="down">
+                <a href="https://www.facebook.com/"><img class="contacts__img" src="img/contacts/facebook.svg"></a>
+                <a href="https://www.instagram.com/"><img class="contacts__img" src="img/contacts/instagram.svg"></a>
+                <a href="https://ru.pinterest.com/"><img class="contacts__img" src="img/contacts/pinterest.svg"></a>
+                <a href="https://twitter.com/"><img class="contacts__img" src="img/contacts/twitter.svg"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+</html>
