@@ -1,0 +1,271 @@
+@media (max-width: 1190px) {
+	.navigation {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	.nav {
+		width: 390px;
+		position: fixed;
+	}
+
+	.nav__img:nth-child(1) {
+    	margin-left: 10px;
+	}
+
+	.search-box:hover > .search-txt {
+	    width: 200px;
+	    padding: 0 6px;
+	}
+
+	.search-box:hover > .search-btn {
+	    position: fixed;
+	    margin-left: 180px;
+	}
+	
+	.logo {
+		margin-right: 0;
+	}
+
+	#menu__toggle {
+  		opacity: 0;
+	}
+
+	/* стилизуем кнопку */
+	.menu__btn {
+  		display: flex; /* используем flex для центрирования содержимого */
+  		align-items: center;  /* центрируем содержимое кнопки */
+  		position: fixed;
+  		top: 20px;
+  		left: 30px;
+  		width: 26px;
+  		height: 26px;
+  		cursor: pointer;
+  		z-index: 1;
+	}
+
+	/* добавляем "гамбургер" */
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+  		display: block;
+  		position: absolute;
+  		width: 100%;
+  		height: 2px;
+  		background-color: #000;
+	}
+
+	.menu__btn > span::before {
+  		content: '';
+  		top: -8px;
+	}
+
+	.menu__btn > span::after {
+  		content: '';
+  		top: 8px;
+	}
+
+	/* контейнер меню */
+	.menu__box {
+  		display: block;
+  		position: fixed;
+  		visibility: hidden;
+  		top: 0;
+  		left: -100%;
+  		width: 200px;
+  		height: 100%;
+  		margin: 0;
+  		padding: 80px 0;
+  		list-style: none;
+  		text-align: center;
+  		background-color: #ECEFF1;
+  		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+	}
+
+	/* элементы меню */
+	.menu__item {
+		display: block;
+		padding: 12px 24px;
+		color: #333;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.menu__item:hover {  		
+		background-color: #CFD8DC;
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span {
+  		transform: rotate(45deg);
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span::before {
+  		top: 0;
+  		transform: rotate(0);
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span::after {
+  		top: 0;
+  		transform: rotate(90deg);
+	}
+
+	#menu__toggle:checked ~ .menu__box {
+  		visibility: visible;
+  		left: 0;
+	}
+
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+  		transition-duration: .25s;
+	}
+
+	.menu__box {
+  		transition-duration: .25s;
+	}
+
+	.menu__item {
+  		transition-duration: .25s;
+	}
+
+	.header {
+    	width: 390px;
+    	height: 780px;
+    	justify-content: center;
+	}	
+
+	.header__box {
+		display: block;
+	}
+
+	.header__title {
+    	width: 100%;
+    	padding: 70px 0;
+    	text-align: center;
+	}
+
+	.subtitle {
+    	font-size: 20px;
+	}
+
+	.header__button {
+    	font-size: 18px;
+	}
+
+	.header__gallery {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: 100%;
+	}
+
+	.gallery__image {
+		margin-left: 0;
+    	width: 216px;
+    	height: 300px;
+	}
+
+	.main {
+    	width: 390px;
+    	padding: 80px 40px;
+	}
+
+
+	[for=burger1]::before,
+	[for=burger2]::before,
+	[for=burger3]::before {
+    	font-size: 22px;
+	}
+
+	.popular__title_box {
+    	padding-bottom: 40px;
+	}
+
+	.popular__title {
+    	font-size: 36px;
+	}
+
+	.popular__link {
+    	font-size: 22px;
+	}
+
+	.popular__gallery_box {
+    	margin-bottom: 40px;
+	}
+
+	.gallery__img {
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+	}
+
+	.gallery__title {
+    	font-size: 22px;
+	}
+
+	.gallery__price {
+    	font-size: 18px;
+	}
+
+	.News {
+    	margin-bottom: 60px;
+	}
+
+	.news__title_box {
+    	margin-bottom: 40px;
+	}
+
+	.news__title {
+    	font-size: 36px;
+	}
+
+	.news__gallery_box {
+    	width: 100%;
+    	display: block;
+	}
+
+	.news__img {
+    	width: 100%;
+    	height: 210px;
+	}
+
+	.news__text_box {
+    	margin-left: 30px;
+    	margin-top: 22.5px;
+    	width: 250px;
+    	padding: 30px 25px 30px 25px;
+    	margin-right: 0;
+	}
+
+	.box__title {
+    	font-size: 18px;
+	}
+
+	.box__date {
+    	font-size: 16px;
+	}
+
+	.box__text {
+    	font-size: 16px;
+	}
+
+	.box__button {
+    	width: 180px;
+	}
+
+	.news__diagonal {
+    	width: 100%;
+    	height: 440px;
+	}
+
+	.sbc__title_box{
+    	margin-bottom: 40px;
+	}
+	.footer{
+    	width: 390px;
+	}
+}
