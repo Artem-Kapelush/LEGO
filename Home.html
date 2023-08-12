@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/logo.svg">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+	<title>Home</title>
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="nav">
+	<div class="wrapper">
+		<nav class="nav">
             <ul class="navigation">
-                <a href="#!"><li class="navigation__item">Woman</li></a>
-                <a href="#!"><li class="navigation__item">Man</li></a>
+                <a href="#!"><li class="navigation__item">Girl</li></a>
+                <a href="#!"><li class="navigation__item">Boy</li></a>
                 <a href="all-categories.html"><li class="navigation__item">Category</li></a>
             </ul>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Girl</a></li>
+                    <li><a class="menu__item" href="#">Boy</a></li>
+                    <li><a class="menu__item" href="#">Category</a></li>
+                </ul>
+            </div>
             <a href="Home.html"><img class="logo" src="img/logo/Lego.png"></a>
             <div class="nav__img_box">
                 <form class="search-box">
@@ -27,22 +39,21 @@
             </div>
         </nav>
         <header class="header">
-            <div class="header__box">
-                <div class="header__title">
-                    <p class="subtitle">«Rebuild The World»</p>
-                    <p class="title">LEGO</p>
-                    <a href="#!"><button class="header__button" href="#!">Check all categories</button></a>
-                </div>
+        	<div class="header__box">
+        		<div class="header__title">
+                	<p class="subtitle">«Rebuild The World»</p>
+                	<p class="title">LEGO</p>
+                	<a href="#!"><button class="header__button" href="#!">Check all categories</button></a>
+            	</div>
                 <div class="header__gallery">
                     <img src="img/globe.png" alt="globe" class="gallery__image">
                 </div>
-            </div>
+        	</div>
         </header>
         <main class="main">
            <div class="popular" id="popular">
                 <div class="popular__title_box">
                     <p class="popular__title">Popular</p>
-                    <!-- <button class="show-more" type="button">View all</button> -->
                     <input type="checkbox" id="burger1">
                     <label for="burger1"></label>
                 </div>
@@ -92,25 +103,23 @@
             <div class="News" id="news">
                 <div class="news__title_box">
                     <p class="news__title">News</p>
-                    <!-- <button class="show-more" type="button">View all</button> -->
                     <input type="checkbox" id="burger3">
                     <label for="burger3"></label>
                 </div>
                 <div class="news__gallery_box">
                     <img class="news__img" src="img/news-img.png">
                     <div class="news__text_box">
-                        <h3 class="text__box_title">Lego decided to leave Russia completely</h3>
-                        <p class="text__box_date">July 12, 2020</p>
-                        <p class="text__box_text">The Danish manufacturer Lego blocks commercial activities in Russia and breaks off relations with the company that manages its Russian stores...</p>
-                        <a target="_blank" href="https://www.epravda.com.ua/rus/news/2022/07/12/689107/"><button class="text__box_button">Read more ...</button></a>
+                        <h3 class="box__title">Lego decided to leave Russia completely</h3>
+                        <p class="box__date">July 12, 2020</p>
+                        <p class="box__text">The Danish manufacturer Lego blocks commercial activities in Russia and breaks off relations with the company that manages its Russian stores...</p>
+                        <a target="_blank" href="https://www.epravda.com.ua/rus/news/2022/07/12/689107/"><button class="box__button">Read more ...</button></a>
                     </div>
                     <img class="news__diagonal" src="img/diagonal/diagonal-news.png">
                 </div>
             </div>
             <div class="SBC" id="sbc">
                 <div class="sbc__title_box">
-                    <h2 class="sbc__title">Shop by category</h2>
-                    <!-- <button class="view" type="button">View all</button> -->
+                    <h2 class="sbc__title">Shop<br> by category</h2>
                     <input type="checkbox" id="burger2">
                     <label for="burger2"></label>
                 </div>
@@ -165,7 +174,7 @@
             </div>
         </footer>
         <div class="btn-up btn-up_hide"></div>
-    </div>
+	</div>
     <script src="js/style.js"></script>
 </body>
 </html>
