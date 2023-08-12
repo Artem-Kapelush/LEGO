@@ -118,6 +118,9 @@ button{
     font-size: 16px;
     list-style-type: none;
 }
+.hamburger-menu{
+    display: none;
+}
 .navigation__item{
     color: #000;
     transition: all 1s ease;
@@ -199,7 +202,7 @@ button{
     font-size: 128px;
 }
 .header__button{
-    width: 219px;
+    width: 220px;
     height: 67px;
     background: #151C22;
     color: white;
@@ -223,17 +226,17 @@ button{
 }
 .gallery__image{
     margin-left: -100px;
-    animation: float 7s infinite;
+    animation: float 6s infinite;
 }
 @keyframes float{
     0%{
-        transform: translateY(-30px);
+        transform: translateY(0px);
     }
     50%{
-        transform: translateY(30px);
+        transform: translateY(-40px);
     }
     100%{
-        transform: translateY(-30px);
+        transform: translateY(0px);
     }
 }
 .main{
@@ -241,163 +244,6 @@ button{
     background: white;
     padding: 100px 50px;
 }
-.popular__title_box{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 50px;
-}
-.popular__title{
-    font-weight: bold;
-    font-size: 32px;
-}
-.popular__link{
-    border: none;
-    background: none;
-    padding-bottom: 3px;
-    border-bottom: 2px solid #151C22;
-    color: #151C22;
-    font-size: 18px;
-}
-.popular__gallery_box{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-    overflow-x: scroll;
-}
-.popular__btn{
-    text-align: center;
-}
-.popular__gallery:nth-child(n + 5){
-    display: none;
-}
-.popular__gallery.is-visible{
-    display: block;
-}
-
-
-
-.gallery__img{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.gallery__title{
-    font-size: 18px;
-    margin-bottom: 5px;
-    transition: all 1s ease;
-}
-.gallery__title:hover{
-    font-weight: bold;
-}
-.gallery__price{
-    font-size: 16px;
-}
-.News{
-    margin-bottom: 109px;
-}
-.news__title_box{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 72px;
-}
-.news__title{
-    font-size: 32px;
-}
-.news__link{
-    padding-bottom: 3px;
-    border-bottom: 2px solid #151C22;
-    color: #151C22;
-    font-size: 18px;
-}
-.news__gallery_box{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-.news__img{
-    width: 60%;
-    height: 460px;
-}
-.news__text_box{
-    margin-right: 53px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 33%;
-    background: #F1F2F4;
-    z-index: 2;
-    padding: 52px 47px 28px 43px;
-    align-self: center;
-}
-.text__box_title{
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 27px;
-}
-.text__box_date{
-    font-size: 18px;
-    margin-bottom: 13px;
-}
-.text__box_text{
-    font-size: 18px;
-    color: #727A82;
-    margin-bottom: 24px;
-    line-height: 21px;
-}
-.text__box_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 64%;
-    height: 64px;
-    background: #151C22;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-    transition: all 2s ease;
-}
-.text__box_button:hover, .text__box_button:focus{
-    background: #6e6363;
-}
-.text__box_button:active{
-    position: relative;
-    top: 5px;
-    background-color: #000000;
-}
-.news__diagonal{
-    z-index: 1;
-    width: 42%;
-    height: 462px;
-}
-.sbc__title_box{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-}
-.sbc__title{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-}
-.sbc__link{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #151C22;
-    color: #151C22;
-    font-size: 18px;
-}
-.sbc__gallery-box{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sbc__gallery:nth-child(n + 5){
-    display: none;
-}
-
 #burger1,
 #burger2,
 #burger3 {
@@ -429,23 +275,148 @@ button{
     content: 'Close all';
 }
 
-
-
 .sbc__gallery:nth-child(n + 5){
     display: none;
 }
 .sbc__gallery.is-block{
     display: block;
 }
-.view{
+.popular__gallery:nth-child(n + 5){
+    display: none;
+}
+.popular__gallery.is-visible{
+    display: block;
+}
+.popular__title_box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.popular__title{
+    font-weight: bold;
+    font-size: 32px;
+}
+.popular__link{
     border: none;
     background: none;
     padding-bottom: 3px;
     border-bottom: 2px solid #151C22;
     color: #151C22;
     font-size: 18px;
-    font-family: 'Work Sans';
 }
+.popular__gallery_box{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    overflow-x: scroll;
+}
+.gallery__img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.gallery__title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    transition: all 1s ease;
+}
+.gallery__title:hover{
+    font-weight: bold;
+}
+.gallery__price{
+    font-size: 16px;
+}
+.News{
+    margin-bottom: 109px;
+}
+.news__title_box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+.news__title{
+    font-size: 32px;
+}
+.news__gallery_box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.news__img{
+    width: 60%;
+    height: 460px;
+}
+.news__text_box{
+    margin-right: 53px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 33%;
+    background: #F1F2F4;
+    z-index: 2;
+    padding: 52px 47px 28px 43px;
+    align-self: center;
+}
+.box__title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.box__date{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.box__text{
+    font-size: 18px;
+    color: #727A82;
+    margin-bottom: 25px;
+    line-height: 21px;
+}
+.box__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+    height: 64px;
+    background: #151C22;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+.box__button:hover, .box__button:focus{
+    background-color: #323232;
+}
+.box__button:active{
+    position: relative;
+    top: 5px;
+    background-color: #000000;
+}
+.news__diagonal{
+    z-index: 1;
+    width: 42%;
+    height: 462px;
+}
+.sbc__title_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.sbc__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+.sbc__gallery-box{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 
