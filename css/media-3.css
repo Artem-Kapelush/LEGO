@@ -305,8 +305,16 @@
     	font-size: 18px;
 	}
 
-	.ymal{
+	.ymal {
     	padding: 0 35px;
+	}
+
+	.ymal__gallery-box {
+    	display: flex;
+    	align-items: center;
+    	flex-wrap: wrap;
+    	margin-top: 50px;
+    	justify-content: center;
 	}
 
 	.ymal__title{
