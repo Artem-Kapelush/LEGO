@@ -168,6 +168,13 @@
 		width: 390px;
 	}
 
+	.gallery__box {
+    	display: flex;
+    	flex-wrap: wrap;
+    	margin-top: 30px;
+    	justify-content: center;
+	}
+	
 	.gallery__img{
     	margin-bottom: 10px;
 	}
