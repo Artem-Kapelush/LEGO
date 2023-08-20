@@ -15,6 +15,23 @@ a{
 br {
     display: none;
 }
+.gallery__button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #151C22;
+    transition: all 2s ease;
+}
+.gallery__button:hover{
+    background: #6e6363;
+}
+.add__to__cart {
+    color: #fff;
+    font-size: 16px;
+}
 .search-box {
     position: absolute;
     top: 31px;
@@ -331,23 +348,6 @@ button{
 .gallery__price{
     font-size: 16px;
     margin-bottom: 10px;
-}
-.gallery__button {
-    width: 150px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    background: #151C22;
-    transition: all 2s ease;
-}
-.gallery__button:hover{
-    background: #6e6363;
-}
-.add__to__cart {
-    color: #fff;
-    font-size: 16px;
 }
 .News{
     margin-bottom: 109px;
