@@ -3,6 +3,10 @@
 		display: none;
 	}
 
+	br {
+    	display: block;
+	}
+	
 	.hamburger-menu {
 		display: block;
 	}
