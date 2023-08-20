@@ -1,4 +1,4 @@
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
 	.nav
 	.main 
 	.footer {
@@ -17,50 +17,14 @@
 		width: 88%;
 	}
 
-	.ymal{
+	.ymal {
     	padding: 0 45px;
 	}
 
-	.hover{
-    	width: 30%;
+	.ymal__gallery {
+	width: 40%;
 	}
-
-	.hover:hover{
-    	width: 43%;
-	}
-
-	.hover-2{
-    	width: 50%;
-	}
-
-	.hover-2:hover{
-    	width: 70%;
-	}
-
-	.hover-3{
-    	width: 25%;
-	}
-
-	.hover-3:hover{
-    	width: 35%;
-	}
-
-	.hover-4{
-    	width: 100%;
-	}
-
-	.hover-4:hover{
-    	width: 132.5%;
-	}
-
-	.hover-5{
-    	width: 65%;
-	}
-
-	.hover-5:hover{
-    	width: 80%;
-	}
-}*/	
+}	
 @media (max-width: 390px) {
 	.navigation {
 		display: none;
