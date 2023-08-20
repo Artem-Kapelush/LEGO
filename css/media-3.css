@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.nav
 	.main 
 	.footer {
@@ -24,7 +24,7 @@
 	.ymal__gallery {
 	width: 40%;
 	}
-}	
+}	 */
 @media (max-width: 390px) {
 	.navigation {
 		display: none;
