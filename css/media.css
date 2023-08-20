@@ -182,6 +182,12 @@
     	font-size: 22px;
 	}
 
+	.popular__gallery_box, .sbc__gallery-box {
+	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+	}
+	
 	.popular__title_box {
     	padding-bottom: 40px;
 	}
