@@ -331,7 +331,6 @@ button{
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
-    overflow-x: scroll;
 }
 .gallery__img{
     margin-top: 15px;
